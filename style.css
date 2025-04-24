@@ -782,11 +782,40 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 3rem;
-    background-color: var(--card); /* Use theme variable instead of hardcoded color */
+    background-color: var(--card);
     border: 1px solid var(--border);
     border-radius: var(--radius);
     padding: 2.5rem;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* Add responsive styles for mobile devices */
+@media screen and (max-width: 768px) {
+    .ai-planner-container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        padding: 1.5rem;
+    }
+
+    .ai-planner-content h3 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .ai-planner-content p {
+        text-align: center;
+    }
+
+    .ai-planner-form form {
+        gap: 1rem;
+    }
+
+    .ai-planner-form select,
+    .ai-planner-form textarea {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
 }
 
 [data-theme="dark"] .ai-planner-container {
