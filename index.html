@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelEase - Your AI Trip Planner</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+    <!-- Consider adding a modern icon library like Feather Icons or Phosphor Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/feather-icons"></script> 
+</head>
+<body>
+    <header class="navbar">
+        <div class="container">
+            <a href="#" class="logo">TravelEase</a>
+            <nav>
+                <ul>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#trip-planner">Trip Planner</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="navbar-actions">
+                <div class="theme-toggle">
+                    <input type="checkbox" id="theme-toggle-checkbox" class="theme-toggle-checkbox">
+                    <label for="theme-toggle-checkbox" class="theme-toggle-label">
+                        <span class="theme-toggle-inner"></span>
+                    </label>
+                </div>
+                <a href="#" class="btn btn-primary">Plan Your Trip</a>
+                <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                    <i data-feather="menu"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>Your Dream Vacation Starts Here</h1>
+                <p class="subtitle">Discover personalized travel itineraries with our AI-powered trip planning platform. Perfect for any budget and preference.</p>
+                <a href="#" class="btn btn-primary btn-lg">Plan Your Trip</a>
+                <div class="hero-image">
+                    <!-- Using Unsplash for a professional placeholder image -->
+                    <img src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Scenic Travel Destination" class="hero-img"> 
+                </div>
+            </div>
+        </section>
+
+        <section id="features" class="features">
+            <div class="container">
+                <h2>Why Plan With Us?</h2>
+                <div class="features-grid">
+                    <div class="feature-item">
+                        <i data-feather="map"></i>
+                        <h3>Smart Destinations</h3>
+                        <p>AI-powered recommendations based on your preferences.</p>
+                    </div>
+                    <div class="feature-item">
+                        <i data-feather="dollar-sign"></i>
+                        <h3>Budget Friendly</h3>
+                        <p>Find the best deals that match your travel budget.</p>
+                    </div>
+                    <div class="feature-item">
+                        <i data-feather="calendar"></i>
+                        <h3>Personalized Itineraries</h3>
+                        <p>Custom travel plans tailored to your interests and schedule.</p>
+                    </div>
+                     <div class="feature-item">
+                        <i data-feather="compass"></i>
+                        <h3>Local Experiences</h3>
+                        <p>Discover hidden gems and authentic local experiences.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="pricing" class="pricing">
+             <div class="container">
+                 <h2>Travel Planning Packages</h2>
+                 <div class="pricing-grid">
+                     <div class="pricing-card">
+                         <h3>Basic Explorer</h3>
+                         <p class="price">Free</p>
+                         <ul>
+                             <li><i data-feather="check"></i> Basic Destination Suggestions</li>
+                             <li><i data-feather="check"></i> Budget Estimation</li>
+                             <li><i data-feather="x"></i> Personalized Itineraries</li>
+                         </ul>
+                         <a href="#" class="btn btn-secondary">Start Planning</a>
+                     </div>
+                     <div class="pricing-card recommended">
+                         <h3>Wanderlust</h3>
+                         <p class="price">$29<span>/trip</span></p>
+                         <ul>
+                             <li><i data-feather="check"></i> AI-Powered Recommendations</li>
+                             <li><i data-feather="check"></i> Detailed Day-by-Day Itineraries</li>
+                             <li><i data-feather="check"></i> Local Experience Suggestions</li>
+                         </ul>
+                         <a href="#" class="btn btn-primary">Choose Package</a>
+                     </div>
+                     <div class="pricing-card">
+                         <h3>Luxury Voyager</h3>
+                         <p class="price">$99<span>/trip</span></p>
+                         <ul>
+                             <li><i data-feather="check"></i> All Wanderlust Features</li>
+                             <li><i data-feather="check"></i> VIP Experience Bookings</li>
+                             <li><i data-feather="check"></i> 24/7 Travel Concierge</li>
+                         </ul>
+                         <a href="#" class="btn btn-secondary">Choose Package</a>
+                     </div>
+                 </div>
+             </div>
+        </section>
+
+        <section id="testimonials" class="testimonials">
+            <div class="container">
+                <h2>What Our Travelers Say</h2>
+                <div class="testimonials-grid">
+                    <div class="testimonial-card">
+                        <div class="testimonial-avatar">
+                            <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Sarah Johnson">
+                        </div>
+                        <div class="testimonial-content">
+                            <p>"TravelEase made planning our honeymoon so effortless! The AI suggested places we never would have found on our own. Our Bali trip was absolutely perfect."</p>
+                            <div class="testimonial-author">
+                                <h4>Sarah Johnson</h4>
+                                <p>Honeymooner, New York</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-avatar">
+                            <img src="https://randomuser.me/api/portraits/men/44.jpg" alt="David Chen">
+                        </div>
+                        <div class="testimonial-content">
+                            <p>"As a frequent business traveler, I needed something that could plan efficient trips with some leisure time. TravelEase's itineraries are perfectly balanced and saved me hours of research."</p>
+                            <div class="testimonial-author">
+                                <h4>David Chen</h4>
+                                <p>Business Traveler, Singapore</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-avatar">
+                            <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Emily Rodriguez">
+                        </div>
+                        <div class="testimonial-content">
+                            <p>"Planning a family vacation with three kids was always stressful until we found TravelEase. The family-friendly suggestions and budget options made our Europe trip amazing and affordable!"</p>
+                            <div class="testimonial-author">
+                                <h4>Emily Rodriguez</h4>
+                                <p>Family Traveler, Chicago</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="faq" class="faq">
+            <div class="container">
+                <h2>Frequently Asked Questions</h2>
+                <div class="faq-grid">
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3><i data-feather="help-circle"></i> How does the AI trip planning work?</h3>
+                            <i data-feather="chevron-down" class="faq-toggle"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Our AI analyzes your preferences, budget, and travel dates to create personalized itineraries. Simply fill out the trip planner form with your destination interests, and our system will generate custom travel recommendations tailored just for you.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3><i data-feather="shield"></i> Can I modify my itinerary after it's generated?</h3>
+                            <i data-feather="chevron-down" class="faq-toggle"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Absolutely! Your itinerary is fully customizable. You can add or remove activities, change accommodations, or adjust your schedule at any time. Our AI will help optimize your new plan while maintaining your preferences.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3><i data-feather="users"></i> Can I plan trips for groups or families?</h3>
+                            <i data-feather="chevron-down" class="faq-toggle"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Yes! Our platform is perfect for planning group trips. You can specify the number of travelers, including children, and our AI will suggest family-friendly or group-appropriate activities, accommodations, and dining options that everyone will enjoy.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3><i data-feather="credit-card"></i> Do you book the trips or just plan them?</h3>
+                            <i data-feather="chevron-down" class="faq-toggle"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>With our Basic and Wanderlust packages, we provide detailed planning and recommendations. Our Luxury Voyager package includes a concierge service that can handle bookings on your behalf. For all packages, we provide direct booking links to our trusted travel partners.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="trip-planner" class="trip-planner">
+            <div class="container">
+                <h2>Plan Your Dream Holiday</h2>
+                <p class="subtitle">Discover amazing destinations based on your budget and preferences</p>
+                
+                <div class="destinations-grid">
+                    <div class="destination-card">
+                        <div class="destination-image">
+                            <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Beach Paradise">
+                            <div class="destination-badge">Popular</div>
+                        </div>
+                        <div class="destination-content">
+                            <h3>Beach Paradise</h3>
+                            <p class="destination-location"><i data-feather="map-pin"></i> Bali, Indonesia</p>
+                            <p class="destination-description">White sandy beaches, crystal clear waters, and stunning sunsets.</p>
+                            <p class="destination-price">From $899</p>
+                            <a href="#" class="btn btn-secondary">View Details</a>
+                        </div>
+                    </div>
+                    
+                    <div class="destination-card">
+                        <div class="destination-image">
+                            <img src="https://images.unsplash.com/photo-1519677100203-a0e668c92439?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Mountain Retreat">
+                            <div class="destination-badge">Hot Deal</div>
+                        </div>
+                        <div class="destination-content">
+                            <h3>Mountain Retreat</h3>
+                            <p class="destination-location"><i data-feather="map-pin"></i> Swiss Alps</p>
+                            <p class="destination-description">Breathtaking mountain views, hiking trails, and cozy chalets.</p>
+                            <p class="destination-price">From $1,199</p>
+                            <a href="#" class="btn btn-secondary">View Details</a>
+                        </div>
+                    </div>
+                    
+                    <div class="destination-card">
+                        <div class="destination-image">
+                            <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="City Exploration">
+                            <div class="destination-badge">Trending</div>
+                        </div>
+                        <div class="destination-content">
+                            <h3>City Exploration</h3>
+                            <p class="destination-location"><i data-feather="map-pin"></i> Tokyo, Japan</p>
+                            <p class="destination-description">Vibrant culture, amazing food, and unforgettable experiences.</p>
+                            <p class="destination-price">From $1,499</p>
+                            <a href="#" class="btn btn-secondary">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="ai-planner-container">
+                    <div class="ai-planner-content">
+                        <h3>Get AI-Powered Trip Suggestions</h3>
+                        <p>Tell us about your dream vacation, and our AI will create a personalized itinerary just for you.</p>
+                    </div>
+                    <div class="ai-planner-form">
+                        <form id="ai-suggestion-form">
+                            <div class="form-group">
+                                <label for="destination-type">Destination Type</label>
+                                <select id="destination-type">
+                                    <option value="">Select destination type</option>
+                                    <option value="beach">Beach</option>
+                                    <option value="mountain">Mountain</option>
+                                    <option value="city">City</option>
+                                    <option value="countryside">Countryside</option>
+                                    <option value="historical">Historical</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="budget">Budget Range</label>
+                                <select id="budget">
+                                    <option value="">Select your budget</option>
+                                    <option value="budget">Budget ($500-$1000)</option>
+                                    <option value="mid">Mid-range ($1000-$2500)</option>
+                                    <option value="luxury">Luxury ($2500+)</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="trip-duration">Trip Duration</label>
+                                <select id="trip-duration">
+                                    <option value="">Select duration</option>
+                                    <option value="weekend">Weekend (2-3 days)</option>
+                                    <option value="week">One Week</option>
+                                    <option value="twoweeks">Two Weeks</option>
+                                    <option value="month">One Month</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="preferences">Special Preferences</label>
+                                <textarea id="preferences" placeholder="Tell us about your interests (e.g., food, adventure, relaxation, family-friendly)"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Generate Suggestions</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <h2>Travel Assistance</h2>
+                        <p>Have questions about your trip? Our travel experts are ready to help!</p>
+                        <div class="contact-methods">
+                            <div class="contact-method">
+                                <i data-feather="mail"></i>
+                                <div>
+                                    <h4>Email Us</h4>
+                                    <p>travel@travelease.com</p>
+                                </div>
+                            </div>
+                            <div class="contact-method">
+                                <i data-feather="phone"></i>
+                                <div>
+                                    <h4>Travel Hotline</h4>
+                                    <p>+1 (555) 789-TRIP</p>
+                                </div>
+                            </div>
+                            <div class="contact-method">
+                                <i data-feather="map-pin"></i>
+                                <div>
+                                    <h4>Our Office</h4>
+                                    <p>456 Voyager Avenue, Travel City, TC 54321</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-form">
+                        <form>
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" placeholder="Your name">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" placeholder="Your email">
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" placeholder="How can we help you?"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta">
+            <div class="container">
+                <h2>Ready to Embark on Your Dream Vacation?</h2>
+                <a href="#" class="btn btn-primary btn-lg">Plan Your Adventure Now</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="logo">TravelEase</a>
+                    <p>Empowering travelers with AI-powered itineraries for unforgettable journeys.</p>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Twitter"><i data-feather="twitter"></i></a>
+                        <a href="#" aria-label="Facebook"><i data-feather="facebook"></i></a>
+                        <a href="#" aria-label="Instagram"><i data-feather="instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i data-feather="linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Product</h4>
+                    <nav>
+                        <a href="#features">Features</a>
+                        <a href="#pricing">Pricing</a>
+                        <a href="#testimonials">Testimonials</a>
+                        <a href="#faq">FAQ</a>
+                    </nav>
+                </div>
+                <div class="footer-links">
+                    <h4>Company</h4>
+                    <nav>
+                        <a href="#">About Us</a>
+                        <a href="#">Careers</a>
+                        <a href="#contact">Contact</a>
+                        <a href="#">Blog</a>
+                    </nav>
+                </div>
+                <div class="footer-newsletter">
+                    <h4>Stay Updated</h4>
+                    <p>Subscribe to our newsletter for the latest updates.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email address">
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Your Company. All rights reserved.</p>
+                <nav>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </nav>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+      feather.replace() // Initialize Feather Icons
+    </script>
+</body>
+</html>
